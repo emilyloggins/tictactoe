@@ -3,14 +3,14 @@ export default function Square() {
 
     const [value, setValue] = useState(null);
 
-    function handleClick() {
+    function onSquareClick() {
         setValue('X');
     }
 
     return (
         <button
             className="square"
-            onClick={handleClick}
+            onClick={onSquareClick}
         >
             {value}
         </button>
